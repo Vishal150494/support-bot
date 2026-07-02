@@ -31,3 +31,6 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Files / Folders
+support-bot-build-guide.md
