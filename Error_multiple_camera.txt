@@ -1,0 +1,66 @@
+[ WARN:0@0.395] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@0.395] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@0.571] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@0.571] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@0.571] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@0.571] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@0.571] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@0.571] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@0.571] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video6): can't open camera by index
+[ WARN:0@0.571] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@0.571] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video7): can't open camera by index
+[ WARN:0@0.571] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[INFO] Auto-detected cameras: [0, 2]
+[INFO] Opening 2 camera(s): [0, 2]  |  Output: 1920x1200, scale-mode=fit
+[INFO] Opened camera: 0, actual=640x480@30.0
+[INFO] Model found: /home/bharath09vadde/euroatlas-vision-detection-prototype/efficientdet_lite0.tflite
+Error in cpuinfo: prctl(PR_SVE_GET_VL) failed
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+[INFO] MediaPipe person-only detection enabled: /home/bharath09vadde/euroatlas-vision-detection-prototype/efficientdet_lite0.tflite
+WARNING ⚠️ Unable to automatically guess model task, assuming 'task=detect'. Explicitly define task for your model, i.e. 'task=detect', 'segment', 'classify', 'pose', 'obb' or 'semantic'.
+[INFO] YOLOv8 drone detector loaded: /home/bharath09vadde/euroatlas-vision-detection-prototype/drone_detector.tflite
+[INFO] Opened camera: 2, actual=640x480@30.0
+[INFO] Model found: /home/bharath09vadde/euroatlas-vision-detection-prototype/efficientdet_lite0.tflite
+[INFO] MediaPipe person-only detection enabled: /home/bharath09vadde/euroatlas-vision-detection-prototype/efficientdet_lite0.tflite
+WARNING ⚠️ Unable to automatically guess model task, assuming 'task=detect'. Explicitly define task for your model, i.e. 'task=detect', 'segment', 'classify', 'pose', 'obb' or 'semantic'.
+[INFO] YOLOv8 drone detector loaded: /home/bharath09vadde/euroatlas-vision-detection-prototype/drone_detector.tflite
+[INFO] Running with 2 camera slot(s). Press q to quit, f to toggle fullscreen.
+Loading /home/bharath09vadde/euroatlas-vision-detection-prototype/drone_detector.tflite for LiteRT inference...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Loading /home/bharath09vadde/euroatlas-vision-detection-prototype/drone_detector.tflite for LiteRT inference...
+[ WARN:0@33.515] global cap_v4l.cpp:804 requestBuffers VIDEOIO(V4L2:/dev/video2): failed VIDIOC_REQBUFS: errno=19 (No such device)
+[WARN] Camera 1 lost. Retrying in 2s.
+[ WARN:0@35.610] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@35.614] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@37.759] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@37.759] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@39.817] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@39.822] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@41.876] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@41.876] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@43.886] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@43.890] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@45.917] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@45.917] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@48.016] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@48.017] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Camera 1 (2) reconnected.
+[WARN] Camera 1 lost. Retrying in 2s.
+[INFO] Cleaning up...
+[INFO] Done.
