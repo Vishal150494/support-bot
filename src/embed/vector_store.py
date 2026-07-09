@@ -78,58 +78,6 @@ def build() -> None:
     print(f"Done. Collection '{COLLECTION_NAME}' has {col.count()} items -> {DB_DIR}")
 
 
-def search_text(
-    query: str,
-    n_results: int = 5,
-    where: dict | None = None,
-) -> list[dict]:
-    """Embed query with encode_query() and return top-n chunks.
-
-    Each result dict: {text, chunk_id, source_domain, source_category,
-                       source_url, title, score}
-    score is cosine similarity (1.0 = identical, 0.0 = orthogonal).
-
-    'where' is an optional ChromaDB metadata filter, e.g.:
-        {"source_domain": "zerodha"}
-    """
-    from sentence_transformers import SentenceTransformer  # lazy — skip on build-only runs
-
-    model = SentenceTransformer("Qwen/Qwen3-Embedding-0.6B")
-    q_emb = model.encode_query(
-        [query],
-        normalize_embeddings=True,
-        convert_to_numpy=True,
-    )
-
-    col = _collection()
-    kwargs = dict(
-        query_embeddings = q_emb.tolist(),
-        n_results        = n_results,
-        include          = ["documents", "metadatas", "distances"],
-    )
-    if where:
-        kwargs["where"] = where
-
-    res = col.query(**kwargs)
-
-    results = []
-    for doc, meta, dist in zip(
-        res["documents"][0], res["metadatas"][0], res["distances"][0]
-    ):
-        results.append(
-            {
-                "text":            doc,
-                "chunk_id":        meta.get("chunk_id", ""),
-                "source_domain":   meta["source_domain"],
-                "source_category": meta["source_category"],
-                "source_url":      meta["source_url"],
-                "title":           meta["title"],
-                "score":           round(1 - dist, 4),  # cosine distance → similarity
-            }
-        )
-    return results
-
-
 def run() -> None:
     build()
 
